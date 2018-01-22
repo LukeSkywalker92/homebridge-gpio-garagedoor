@@ -7,8 +7,9 @@
 2. Install NodeJS using: `curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -` and `sudo apt install nodejs`
 3. Install `sudo apt-get install libavahi-compat-libdnssd-dev`
 4. Install homebridge using: `sudo npm install -g --unsafe-perm homebridge`
-5. Install this plugin using: `npm install -g git+https://github.com/LukeSkywalker92/homebridge-gpio-garagedoor.git`
-6. Update your configuration file. See sample config.json snippet below. 
+5. Run `sudo npm install --unsafe-perm mdns` and `sudo npm rebuild --unsafe-perm` at `/usr/local/lib/node_modules/homebridge`
+6. Install this plugin using: `npm install -g git+https://github.com/LukeSkywalker92/homebridge-gpio-garagedoor.git`
+7. Update your configuration file. See sample config.json snippet below. 
 
 
 # wpa_supplicant.conf
