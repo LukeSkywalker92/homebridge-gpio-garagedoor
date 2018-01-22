@@ -3,9 +3,26 @@
 
 # Installation
 
-1. Install homebridge using: `npm install -g homebridge`
-2. Install this plugin using: `npm install -g git+https://github.com/LukeSkywalker92/homebridge-gpio-garagedoor.git`
-3. Update your configuration file. See sample config.json snippet below. 
+1. Install Raspbian (add empty file ssh and wpa_supplicant.conf to boot folder)
+2. Install NodeJS using: `curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -` and `sudo apt install nodejs`
+3. Install homebridge using: `npm install -g homebridge`
+4. Install this plugin using: `npm install -g git+https://github.com/LukeSkywalker92/homebridge-gpio-garagedoor.git`
+5. Update your configuration file. See sample config.json snippet below. 
+
+
+# wpa_supplicant.conf
+
+```
+# Datei wpa_supplicant.conf in der Boot-Partition (Raspbian Stretch)
+country=DE  #omit if US
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+network={
+       ssid="wlan-bezeichnung"
+       psk="passwort"
+       key_mgmt=WPA-PSK
+}
+```
 
 # Configuration
 
