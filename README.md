@@ -3,27 +3,37 @@
 
 # Installation
 
-1. Install homebridge using: npm install -g homebridge
-2. Install this plugin using: npm install -g homebridge-gpio-garagedoor
+1. Install homebridge using: `npm install -g homebridge`
+2. Install this plugin using: `npm install -g git+https://github.com/LukeSkywalker92/homebridge-gpio-garagedoor.git`
 3. Update your configuration file. See sample config.json snippet below. 
 
 # Configuration
 
 Configuration sample:
-
- ```
-	"accessories": [
-		{
-			"accessory": "GPIOGarageDoor",
-			"name": "Garage Door",
-			"doorSwitchPin": 23,
-			"doorSensorPin": 24,
-			"isNCSensor": false,
-			"doorOpensInSeconds": 14
-		}
-	]
 ```
+{
+    "bridge": {
+        "name": "Homebridge",
+        "username": "CC:22:3D:E3:CE:30",
+        "port": 51826,
+        "pin": "246-92-505"
+    },
+    
+    "description": "Garagentor"
 
+ "accessories": [
+        {
+                "accessory": "GPIOGarageDoor",
+                "name": "Garagentor",
+                "doorSwitchPin": 23,
+                "doorSensorPin": 24,
+                "isNCSensor": true,
+                "doorOpensInSeconds": 25
+        }
+   ]
+
+}
+```
 Fields: 
 
 * "accessory": Must always be "GPIOGarageDoor" (required)
