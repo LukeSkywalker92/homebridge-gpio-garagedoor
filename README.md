@@ -5,7 +5,7 @@
 
 1. Install Raspbian (add empty file ssh and wpa_supplicant.conf to boot folder)
 2. Install NodeJS using: `curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -` and `sudo apt install nodejs`
-3. Install homebridge using: `npm install -g homebridge`
+3. Install homebridge using: `sudo npm install -g --unsafe-perm homebridge`
 4. Install this plugin using: `npm install -g git+https://github.com/LukeSkywalker92/homebridge-gpio-garagedoor.git`
 5. Update your configuration file. See sample config.json snippet below. 
 
@@ -22,6 +22,15 @@ network={
        psk="passwort"
        key_mgmt=WPA-PSK
 }
+```
+
+# NodeJS Installation on RPi Zero
+
+```
+wget https://nodejs.org/dist/latest-v6.x/node-v6.10.0-linux-armv6l.tar.gz
+tar -xvf node-v6.10.0-linux-armv6l.tar.gz
+cd node-v6.10.0-linux-armv6l
+sudo cp -R * /usr/local/
 ```
 
 # Configuration
