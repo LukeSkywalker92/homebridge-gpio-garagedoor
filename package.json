@@ -1,0 +1,97 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "homebridge-gpio-garagedoor",
+        "scope": null,
+        "escapedName": "homebridge-gpio-garagedoor",
+        "name": "homebridge-gpio-garagedoor",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/home/pi/.homebridge"
+    ]
+  ],
+  "_from": "homebridge-gpio-garagedoor@latest",
+  "_id": "homebridge-gpio-garagedoor@0.2.2",
+  "_inCache": true,
+  "_location": "/homebridge-gpio-garagedoor",
+  "_nodeVersion": "4.2.4",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/homebridge-gpio-garagedoor-0.2.2.tgz_1479654822387_0.0565522825345397"
+  },
+  "_npmUser": {
+    "name": "kraigm",
+    "email": "kraigm@enferra.com"
+  },
+  "_npmVersion": "2.14.12",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "homebridge-gpio-garagedoor",
+    "scope": null,
+    "escapedName": "homebridge-gpio-garagedoor",
+    "name": "homebridge-gpio-garagedoor",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/homebridge-gpio-garagedoor/-/homebridge-gpio-garagedoor-0.2.2.tgz",
+  "_shasum": "61f8502a395f0f79745865a12e2f9c9f52f13c44",
+  "_shrinkwrap": null,
+  "_spec": "homebridge-gpio-garagedoor",
+  "_where": "/home/pi/.homebridge",
+  "bugs": {
+    "url": "https://github.com/kraigm/homebridge-gpio-garagedoor/issues"
+  },
+  "dependencies": {
+    "bluebird": "^3.3.4",
+    "onoff": "1.1.0"
+  },
+  "description": "Raspberry Pi GPIO based Garage Door plugin for Homebridge",
+  "devDependencies": {
+    "typescript": "^1.8"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "61f8502a395f0f79745865a12e2f9c9f52f13c44",
+    "tarball": "https://registry.npmjs.org/homebridge-gpio-garagedoor/-/homebridge-gpio-garagedoor-0.2.2.tgz"
+  },
+  "engines": {
+    "homebridge": ">=0.2.5",
+    "node": ">=0.12.0"
+  },
+  "gitHead": "ea2e5cf2965363627fbe9ff3135216f7a12b8830",
+  "homepage": "https://github.com/kraigm/homebridge-gpio-garagedoor#readme",
+  "keywords": [
+    "homebridge-plugin",
+    "homebridge",
+    "garagedoor",
+    "raspberry",
+    "pi",
+    "gpio"
+  ],
+  "license": "ISC",
+  "maintainers": [
+    {
+      "name": "kraigm",
+      "email": "kraigm@enferra.com"
+    }
+  ],
+  "name": "homebridge-gpio-garagedoor",
+  "optionalDependencies": {},
+  "preferGlobal": true,
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kraigm/homebridge-gpio-garagedoor.git"
+  },
+  "scripts": {
+    "prepublish": "node node_modules/typescript/bin/tsc --module commonjs index.ts -t ES5"
+  },
+  "version": "0.2.2"
+}
